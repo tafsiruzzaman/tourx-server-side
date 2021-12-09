@@ -50,7 +50,7 @@ async function run() {
         res.send(all_bookings);
       })
 
-      // Post API
+      // Post API 
       app.post('/packages', async (req, res) => {
         const newPackage = req.body;
         const result = await packageCollection.insertOne(newPackage);
